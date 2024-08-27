@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Layout with Sidebar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header {
+            background-color: #800080;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container 
+         {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            background-color: #cd853f;
+            color:333;
+            width: 250px;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color:4169e1;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .card {
+            background: #ffd700;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        .media-library ul {
+            list-style: none;
+            padding: 0;
+        }
+        .media-library li {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BOOKS FOR TOMORROW</h1>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2><u>Navigation</u></h2>
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login/Register</a>
+        <a href="#media">Media Library</a>
+    </aside>
+
+    <main class="content">
+        <section id="home" class="card">
+            <h2>Welcome to Our Site</h2>
+            <p>Explore our products, learn about us, or get in touch through our contact page.</p>
+        </section>
+
+        <section id="product" class="card">
+            <h2>Indian Polity</h2>
+            <img src="C:\Users\baswa\OneDrive\Pictures\indian 3.jpeg" style="width:50%;height:50%;"alt="Product Image">
+            <p>Author:Laxmi kanth </p>
+            <p>Description:Polity is an eminent and important segment of the UPSC exam. Though the student sometimes seems bored and dry, it is a very scoring subject in both the Prelims and Mains. If a careful analysis is done of the past UPSC Previous Year Question Papersand goes through the exam pattern along with the prelims.</p>
+            <p>Price:698 rs </p>
+
+
+<h2>Java</h2>
+            <img src="C:\Users\baswa\OneDrive\Pictures\java 1.jpeg" style="width:50%;height:50%;"alt="Product Image">
+            <p>Author:E Balaguruswamy</p>
+             <p>Description:This new edition of the most trusted book in Java has some essential updates. While it retains the quintessential style of explaining the concepts with exhaustive programs, solved examples, and illustrations, it includes new chapters on Assertions & Design by Contract, and Generic Programming, and changes in Java based on various editions until SE 17. The book also contains new and updated programming exercises that would help students practice various real-life problems.</p>
+            <p>Price:639rs </p>
+
+
+
+<h2>The Teacher</h2>
+            <img src="C:\Users\baswa\Downloads\teacher 1.jpg" style="width:50%;height:50%;"alt="Product Image">
+             <p> Author: Freida MC faden</p>
+            <p>Description:The Teacher is a psychological thriller by New York Times best-selling author Freida McFadden. The story follows the lives of Eve Bennett, a math teacher at Caseham High School, her husband Nate, an English teacher at the same school, and Adeline “Addie” Severson, a student in their classes1. The novel delves into a world of deceit, secrets, and revenge, with Addie disrupting Eve's seemingly perfect life</p>
+            <p>Price:499rs </p>
+
+
+
+<h2>The Women</h2>
+            <img src="C:\Users\baswa\Downloads\the women 1.jpg"  style="width:50%;height:50%;" alt="Product Image">
+             <p>Author: Kristin Hannah</p>
+            <p>Description:The Women is a historical fiction novel by Kristin Hannah1. It tells the story of Frances "Frankie" McGrath, a young nurse who serves in the United States Army Nurse Corps during the Vietnam War12. The novel debuted at number one on The New York Times fiction best-seller list.</p>
+            <p>Price:467rs </p>
+
+
+
+<h2>Atomic Habits</h2>
+            <img src="C:\Users\baswa\Downloads\atomic habits 1.jpg" style="width:50%;height:50%;" alt="Product Image">
+            <p>Author:James clear</p>
+            <p>Description:Atomic Habits by James Clear is a self-help book that teaches readers how to change their habits and get 1% better every day12. The book presents a framework called the Four Laws of Behavior Change, which teaches readers a simple set of rules for creating good habits and breaking bad ones1. Clear emphasizes the importance of habits in shaping our lives and introduces the concept of “atomic habits,” which are tiny actions that compound and lead to significant results</p.
+            <p>Price:1099rs</p>
+
+
+
+            
+        </section>
+
+        <section id="about" class="card">
+            <h2>About Us</h2>
+            <p>welcome to our book, a project born out of a passion for storytelling and a desire to share knowledge and insights with readers around the world. Our team comprises writers, editors, and creatives who believe in the power of the written word to inspire, educate, and entertain. We are committed to bringing you a diverse range of topics, crafted with care and attention to detail, to ensure a rewarding reading experience. 
+
+Thank you for joining us on this journey. We hope you enjoy reading our book as much as we enjoyed creating it.
+.</p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone number">phone number:</label>
+                <input type="phone number" id="phone number" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="login" class="card">
+            <h2>Login</h2>
+            <form action="login-handler.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <h2>Register</h2>
+            <form action="register-handler.php">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" name="username" required>
+
+                <label for="reg-Email Id">Email Id:</label>
+                <input type="text" id="reg-Email Id" name="email Id" required>
+
+                <label for="reg-Phone Number">Phone Number:</label>
+                <input type="text" id="reg-Phone Number" name="Phone Number" required>
+
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="password" required>
+                 
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="media" class="card">
+            <h2>Media Library</h2>
+            <ul class="media-library">
+<a href="aamu images.html" download>photos</a>
+               
+            </ul>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <p>&copy;@Books for tomorrow</p>
+</footer>
+
+<script>
+    // Add smooth scrolling to anchor links
+    document.querySelectorAll('.sidebar a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
